@@ -14,7 +14,7 @@
             d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-3 2v5l-1-.75L15 9V4h2zm3 12H8V4h5v9l3-2.25L19 13V4h1v12z"
           />
         </svg>
-        SocialMark
+        BookLike
       </div>
       <div class="hidden">
         <a class="mr-3 navbar-item" href="#">Home</a>
@@ -23,7 +23,8 @@
       </div>
 
       <div class="ml-auto flex items-center">
-        <button
+        <router-link
+          :to="{ name: 'NewBookMark' }"
           class="flex bg-gray-700 hover:bg-black text-white px-3 py-1 rounded-sm text-sm items-center mr-2"
         >
           <svg
@@ -37,7 +38,8 @@
             <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
           </svg>
           New
-        </button>
+        </router-link>
+
         <div class="relative group">
           <button
             class="w-8 h-8 flex items-center justify-center rounded-md transition-colors duration-500 hover:bg-gray-200 group-focus-within:bg-gray-300"
